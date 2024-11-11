@@ -18,7 +18,7 @@ namespace SingleResponsibilityPrinciple
         public Task<IEnumerable<string>> GetTradeAsync()
         {
             Task<IEnumerable<string>> task = Task.Run(() => origProvider.GetTradeData());
-                return task;
+            return task;
         }
         public IEnumerable<string> GetTradeData()
         {
