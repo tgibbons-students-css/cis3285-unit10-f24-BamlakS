@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleResponsibilityPrincip
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleResponsibilityPrinciple.Contracts", "SingleResponsibilityPrinciple.Contracts\SingleResponsibilityPrinciple.Contracts.csproj", "{49A1A061-68B0-47E9-A003-F46D763ABD86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrincipleTests", "SingleResponsibilityPrincipleTests\SingleResponsibilityPrincipleTests.csproj", "{3B77D49B-0A4D-4686-9664-F65FD51E9AA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleResponsibilityPrincipleTests", "SingleResponsibilityPrincipleTests\SingleResponsibilityPrincipleTests.csproj", "{3B77D49B-0A4D-4686-9664-F65FD51E9AA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
