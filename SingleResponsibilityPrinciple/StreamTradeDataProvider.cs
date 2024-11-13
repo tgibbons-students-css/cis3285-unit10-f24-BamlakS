@@ -13,19 +13,23 @@ namespace SingleResponsibilityPrinciple
             this.logger = logger;
         }
 
-        public IEnumerable<string> GetTradeData()
+        public async IAsyncEnumerable<string> GetTradeData()
         {
-            var tradeData = new List<string>();
-            logger.LogInfo("Reading trades from file stream.");
+            // var tradeData = new List<string>();
+            // logger.LogInfo("Reading trades from file stream.");
+            logger.LogInfo("Reading trades from file stream asynchronously.");
             using (var reader = new StreamReader(stream))
             {
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                // while ((line = reader.ReadLine()) != null)
+                while ((line = await reader.ReadLineAsync()) != null)
                 {
-                    tradeData.Add(line);
+                    //tradeData.Add(line);
+                    yield return line;
+                    await Task.Yield();
                 }
             }
-            return tradeData;
+           // return tradeData;
         }
 
         private readonly Stream stream;
